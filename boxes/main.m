@@ -9,11 +9,6 @@
 #import "Box/Box.h"
 
 int main(int argc, const char * argv[]) {
-    @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
-    }
-    
     // create box
     float width = 10.0;
     float height = 20.0;
