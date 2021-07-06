@@ -6,11 +6,19 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Box/Box.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
         NSLog(@"Hello, World!");
     }
+    
+    float width = 10.0;
+    float height = 20.0;
+    float length = 30.0;
+    Box *box = [[Box alloc] initWithWidth:width andHeight:height andLength:length];
+    
+    NSLog(@"%@", box);
     return 0;
 }
