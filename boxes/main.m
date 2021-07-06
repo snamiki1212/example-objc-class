@@ -14,11 +14,17 @@ int main(int argc, const char * argv[]) {
         NSLog(@"Hello, World!");
     }
     
+    // create box
     float width = 10.0;
     float height = 20.0;
     float length = 30.0;
     Box *box = [[Box alloc] initWithWidth:width andHeight:height andLength:length];
+    NSLog(@"%@, box", box);
     
-    NSLog(@"%@", box);
+    // calculate
+    float volume = [box getVolume];
+    NSLog(@"%f, volume", volume);
+    
+    
     return 0;
 }

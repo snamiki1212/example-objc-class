@@ -19,4 +19,8 @@
     }
     return self;
 }
+
+- (float) getVolume {
+    return self.width * self.height * self.length;
+}
 @end
