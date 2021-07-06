@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property float length;
 - (instancetype)initWithWidth: (float) width andHeight: (float) height andLength: (float) length;
 - (float) getVolume;
+- (float) calculateGreather: (Box *) anotherBox;
 @end
 
 NS_ASSUME_NONNULL_END

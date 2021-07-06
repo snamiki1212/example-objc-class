@@ -23,4 +23,11 @@
 - (float) getVolume {
     return self.width * self.height * self.length;
 }
+
+- (float) calculateGreather: (Box *) anotherBox {
+    float volumeOfAnotherBox = [anotherBox getVolume];
+    float volumeOfThisBox = [self getVolume];
+    return volumeOfThisBox / volumeOfAnotherBox;
+}
+
 @end
